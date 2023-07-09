@@ -30,63 +30,41 @@ chart(dateArray, pricesArray)
 
 
 const scatter = (dates, prices) => {
+    const data = {
+        datasets: [{
+            label: 'Scatter Dataset',
+            data: [{
+            x: 1499516102000,
+            y: 122
+            }, {
+            x: 1499516102000,
+            y: 125
+            }, {
+            x: 1499516102000,
+            y: 131
+            }, {
+            x: 1499516102000,
+            y: 121
+            }],
+            backgroundColor: 'rgb(255, 99, 132)'
+        }],
+    };
 
     const ctx = document.getElementById('myChartScatter');
 
     new Chart(ctx, {
-        type: 'pie',
-        data: {
-        labels: dates,
-        datasets: [{
-            label: 'Weller 12',
-            data: prices,
-            borderWidth: 1
-        }]
-        },
+        type: 'scatter',
+        data: data,
         options: {
-        scales: {
-            y: {
-            beginAtZero: false
+            scales: {
+            x: {
+                type: 'linear',
+                position: 'bottom'
             }
-        }
+            }
         }
     });
 
 }
 
 scatter(dateArray, pricesArray)
-
-
-const data = {
-    datasets: [{
-        label: 'Scatter Dataset',
-        data: [{
-        x: 1499516102000,
-        y: 122
-        }, {
-        x: 1499516102000,
-        y: 125
-        }, {
-        x: 1499516102000,
-        y: 131
-        }, {
-        x: 1499516102000,
-        y: 121
-        }],
-        backgroundColor: 'rgb(255, 99, 132)'
-    }],
-};
-
-
-const config = {
-    type: 'scatter',
-    data: data,
-    options: {
-        scales: {
-        x: {
-            type: 'linear',
-            position: 'bottom'
-        }
-        }
-    }
-};
