@@ -15,7 +15,7 @@ The goal of this update is to enhance the existing project's charting capabiliti
 - Offers extensive customization options for chart appearance and behavior.
 - Enables responsive charts that adapt to different screen sizes.
 
-## Use: This will enhance a currently deployed site which provided whiskey collectors with up-to-the-minute pricing data
+## Use: This will enhance a currently deployed site that provides whiskey collectors with up-to-the-minute pricing data. 
 https://www.booggle-finance.com
 
 Contributions to this project are welcome. To contribute, please follow these steps:
